@@ -8,13 +8,14 @@ function Inputs(inputValue,setInputValue,setIsShown) {
       }
     }
     const handleChangeInputValue=(e)=>{
+    
         const {name,value}=e.target;
         setInputValue({...inputValue, [name]:value});
     }
   return (
     <>
      <input placeholder='fullname' defaultValue={inputValue.fullname} name='fullname' onChange={handleChangeInputValue}/>
-     <button>Show</button>
+     <button onClick={handleClickButton}>Show</button>
     </>
   )
 }

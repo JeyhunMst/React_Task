@@ -2,7 +2,7 @@ import React from 'react'
 import Inputs from '../Inputs';
 import InputValue from '../InputValue';
 
-function index()
+function Home(){
     const [inputValue, setInputValue]=React.useState({
         fullname:""
     })
@@ -18,6 +18,6 @@ function index()
     </>)}
     </>
   )
+}
 
-
-export default index
+export default Home
